@@ -1,4 +1,4 @@
 [Service]
 Type=simple
-ExecStart=python -m SimpleHTTPServer {{ server_port }}
+ExecStart=/usr/bin/python2 -m SimpleHTTPServer {{ server_port }}
 WorkingDirectory={{ docroot }}
