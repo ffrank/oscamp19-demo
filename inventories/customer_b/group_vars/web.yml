@@ -1,0 +1,14 @@
+---
+server_port: 8082
+docroot: /opt/customer_b_webroot
+site_name: b_site
+message: |
+    WARNING! This is a high secure web zone.
+    If you are not authorized to view this information,
+    please leave immediately.
+    Any failure to comply with this HIGH SECURITY warning
+    will be reported to authorities near you. We have no
+    tolerance for HACKERS and OTHER CRIMINALS. Your
+    activities are being monitored and we are already
+    tracking you. RESISTANCE IS FUTILE. This is a
+    HIGH SECURITY web zone after all. Check mate.

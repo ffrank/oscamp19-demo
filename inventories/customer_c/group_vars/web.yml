@@ -1,0 +1,7 @@
+---
+server_port: 8083
+docroot: /opt/customer_c_webroot
+site_name: c_site
+message: |
+    The new Zombo.com, currently under construction.
+    Please check back soon.

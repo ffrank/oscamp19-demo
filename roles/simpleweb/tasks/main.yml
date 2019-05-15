@@ -1,0 +1,16 @@
+
+- name: Create simpleweb root
+  file: path={{ docroot }} state=directory
+
+- name: Create index.html from template
+  template:
+    dest: "{{ docroot }}/index.html"
+    src: index.html.j2
+
+- name: Create systemd service from template
+  template:
+    dest: /etc/systemd/system/{{ site_name }}.service
+    src: service.j2
+
+- name: Run the webservice
+  systemd: name={{ site_name }} state=started enabled=yes daemon-reload=yes

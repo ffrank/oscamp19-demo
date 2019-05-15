@@ -1,0 +1,9 @@
+---
+server_port: 8081
+docroot: /opt/customer_a_webroot
+site_name: a_site
+message: |
+    Welcome to the AWX Demo for OSCamp 2019.
+    Hope you're having a lovely conference experience.
+    Please poke the snoring person in the back.
+    Thank you.
