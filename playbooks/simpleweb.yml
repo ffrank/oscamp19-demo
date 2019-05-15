@@ -1,5 +1,7 @@
 ---
 - name: Install the simple web service
   hosts: web
+  become: True
+
   roles:
     - simpleweb

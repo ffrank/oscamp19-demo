@@ -1,4 +1,6 @@
 ---
+ansible_user: c_admin
+
 server_port: 8083
 docroot: /opt/customer_c_webroot
 site_name: c_site
