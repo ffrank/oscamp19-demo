@@ -1,0 +1,8 @@
+- name: Remove all artifacts from target machines
+  hosts: web
+
+  tasks:
+    - systemd: name={{ item }} state=stopped enabled=no
+      with_items: [ a_site, b_site, c_site ]
+    - shell: rm -r /opt/customer*webroot /etc/systemd/system/?_site.service
+    - command: systemctl daemon-reload
