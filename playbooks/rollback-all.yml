@@ -1,5 +1,6 @@
 - name: Remove all artifacts from target machines
   hosts: web
+  become: True
 
   tasks:
     - systemd: name={{ item }} state=stopped enabled=no
