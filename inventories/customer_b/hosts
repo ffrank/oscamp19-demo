@@ -1,3 +1,5 @@
+[customer_b:children]
+web
 
 [web]
 websrv.customer.net ansible_host=46.231.178.131
